@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>간단한 샘플2: 비밀번호 비교 체크</h2>
+
+    <form onsubmit="return validateForm()">
+    <p>비밀번호: <input type="password" id="password"></p>
+    <p>비밀번호 확인: <input type="password" id="confirmPassword"></p>
+    <p>메세지: <span id="passwordError"></span></p>
+    <p><input type="submit" value="확인"></p>
+    </form>
+    <script>
+        // 폼 유효성 검증 함수
+    function validateForm() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var passwordError = document.getElementById("passwordError");
+
+        // 비밀번호 일치 여부 확인
+        if (password !== confirmPassword) {
+            passwordError.textContent = "비밀번호가 일치하지 않습니다.";
+            return false; // 폼 제출을 중단
+        } else {
+            passwordError.textContent = "비밀번호가 일치합니다.";
+            return true; // 폼 제출을 허용
+        }
+    }
+    </script>
+</body>
+</html>

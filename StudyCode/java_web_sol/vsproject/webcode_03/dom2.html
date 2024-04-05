@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="post"></form>
+
+    <div id="exampleDiv">원래 입력된 내용입니다.</div>
+    <input type="button" value="클릭 후 클자수정" onclick="modifyText()">
+
+    <script>
+        // getElementById() 함수를 사용하여 태그의 내용을 수정
+        
+        function modifyText() {
+            var modifiedText = "수정된 내용입니다.";
+            document.getElementById("exampleDiv").innerHTML = modifiedText;
+        }
+    </script>
+</body>
+</html>

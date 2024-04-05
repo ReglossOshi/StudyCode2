@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="./imgs/airbnb-logo.png" alt="airbnb logo" />
+        <div id="little-search">
+          <button class="little-search_button">어디든지</button><span class="divider"></span>
+          <button class="little-search_button">언제든 일주일</button><span class="divider"></span>
+          <button class="little-search_button">게스트 추가</button>
+          <div id="magnifying-glass-wrapper">
+            <img id="magnifying-glass-icon" 
+              src="./imgs/Magnifying_glass_icon.svg" 
+              alt="magnifying glass icon" />
+          </div>
+        </div>
+        <div id="header-right-section">
+          <div id="do-airbnb">
+            당신의 공간을 에어비앤비하세요
+          </div>
+          <div id="profile-section">
+            <img src="./imgs/list.svg" alt="list icon" width="16" />
+            <img src="./imgs/user-circle.svg" alt="user icon" width="30" />
+          </div>
+        </div>
+      </header>
+
+      <div id="category-bar">
+        <button class="category-button" id="active-category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>한적한 시골</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>해변 근처</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>한옥</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>그랜드 피아노</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>초소형 주택</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>방</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>최고의 전망</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>한적한 시골</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>캠핑장</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>멋진 수영장</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>캐슬</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>국립공원</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>통나무집</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/armchair.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/armchair_black.svg" alt="airplane-black icon" />
+          <div>인기 급상승</div>
+        </button>
+        <button class="category-button">
+          <img class="inactive-img" src="./imgs/airplane.svg" alt="airplane icon" />
+          <img class="active-img" src="./imgs/airplane_black.svg" alt="airplane-black icon" />
+          <div>스키</div>
+        </button>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54647454.53854397!2d123.30302120041861!3d33.281780126104216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1705907884924!5m2!1sko!2skr" 
+        width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <button id="fixed-map-button" onclick="location.href='index.html'">
+        <span>목록보기</span>
+        <img src="imgs/map-trifold.svg" alt="map icon" width="16px">
+      </button>
+</body>
+</html>

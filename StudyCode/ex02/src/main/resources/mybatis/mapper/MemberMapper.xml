@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.MemberMapper">
+    <!--회원 정보 등록-->
+    <insert id="insertMember">
+        insert into tbl_member(
+--        mno,
+        username, password,email,role,kor_name,provider,provider_id)
+        values(
+--        seq_member.nextval,
+                #{username},
+                #{password},
+                #{email},
+                #{role},
+                #{korName},
+                #{provider},
+                #{providerId})
+    </insert>
+
+    <!--회원 정보 조회-->
+    <select id="selectByUserName" resultType="org.zerock.domain.MemberVO" resultMap="kor">
+        select * from tbl_member where username = #{username}
+    </select>
+
+    <resultMap type="org.zerock.domain.MemberVO" id="kor">
+        <result property="korName" column="kor_name" />
+        <result property="providerId" column="provider_id" />
+    </resultMap>
+</mapper>

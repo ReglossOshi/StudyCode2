@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{border: 1px solid green;
+        width:210px;}
+    </style>
+</head>
+<body>
+    <h2>마우스를 올리면 이미지가 바뀌는 이벤트</h2>
+
+    <p><img src="light2.jpg" alt="" onmouseover="mouseOver()" onmouseout="mouseOut()" id="example"></p>
+
+    <script>
+        var examImg = document.getElementById("example");
+        function mouseOver(){
+            // alert("마우스가 올라감");   
+            examImg.src = "light1.jpg";
+        }
+        function mouseOut(){
+            examImg.src = "light2.jpg";
+        }
+    </script>
+</body>
+</html>

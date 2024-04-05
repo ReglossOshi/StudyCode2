@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    background-color: #bbc7c8;
+    padding: 50px 0;
+  }
+  
+  div {
+    margin: 50px auto;
+  }
+  
+  /**
+   * ----- Specific Styles -----
+   */
+  
+  .sl {
+    position: relative;
+    
+    width: 400px;
+    height: 70px;
+  }
+  
+  .sl label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 32px;
+    user-select: none;
+  }
+  
+  .sl label:hover {
+    cursor: pointer;
+  }
+  
+  .sl label::after {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 330px;
+    text-align: center;
+    line-height: 70px;
+    transition: transform 0.2s cubic-bezier(0.66, 1.35, 1, 1.36);
+  }
+  
+  .sl.active label::after {
+    transform: rotate(45deg);
+  }
+  
+  .sl label span {
+    font-family: 'Poiret One';
+    display: inline-block;
+    width: 330px;
+    height: 100%;
+    line-height: 70px;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+  
+  .sl ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Poiret One';
+    color: #424242;
+    background-color: #FFF;
+    padding: 10px 0;
+    margin: 70px -5px 0;
+    visibility: hidden;
+  }
+  
+  .sl.active ul {
+    visibility: visible;
+  }
+  
+  .sl ul li {
+    padding: 10px 0;
+    padding-left: 40px;
+    user-select: none;
+  }
+  
+  .sl ul li:hover {
+    cursor: pointer;
+    background-color: #f1f1f2;
+  }
+  
+  .sl select {
+    display: none;
+  }
+  
+  /* ----- Spiderman ------ */
+  .sl-spiderman {
+    border: 5px solid #FFF;
+    z-index: 2;
+  }
+  
+  .sl-spiderman label {
+    color: #FFF;
+  }
+  
+  .sl-spiderman label::after {
+    
+  }
+  
+  .sl-spiderman.active label::after {
+    
+  }
+  
+  .sl-spiderman ul {
+    
+  }
+  
+  .sl-spiderman ul li {
+    
+  }
+  
+  .sl-spiderman ul li:hover {
+    
+  }
+  
+  /* ----- Wonder Woman */
+  .sl-wonder_woman {
+    border-bottom: 5px solid #FFF;
+    z-index: 1;
+    background-color: #e4e3db;
+  }
+  
+  .sl-wonder_woman label {
+    color: #FFF;
+  }
+  
+  .sl-wonder_woman label::after {
+    
+  }
+  
+  .sl-wonder_woman.active label::after {
+    
+  }
+  
+  .sl-wonder_woman ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .sl-wonder_woman ul li {
+    
+  }
+  
+  .sl-wonder_woman ul li:hover {
+    
+  }

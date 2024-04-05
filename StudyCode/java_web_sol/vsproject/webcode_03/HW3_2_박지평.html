@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바 스크립트 문제</h2>
+    <script>
+        var a=2;
+        var b=5;
+        if(a>b){
+            console.log("큰 수 찾기: ",a);
+        } else if(a<b){
+            console.log("큰 수 찾기: ",b);
+        } else{
+            console.log("큰 수 찾기: ",a);
+        }
+
+        var sum=0;
+        for(let i=1;i<=10;i++){
+            if(i%2==0){
+                sum+=i;
+            }
+        }
+        console.log("짝수의 합:",sum);
+
+        function printSumOdd(){
+            sum=0;
+            for(let i=1;i<=10;i++){
+                if(i%2==1){
+                    sum +=i;
+                }
+            }
+            console.log("홀수의 합: ",sum);
+        }
+        printSumOdd();
+
+        function printMultiplicationTable(){
+            for(let i=2;i<=4;i++){
+                for(let j=1;j<=10;j++){
+                    console.log(i,"X",j," = ",i*j);
+                }
+            }
+        }
+        printMultiplicationTable();
+
+        function calculateFactorial(){
+            sum=1;
+            for(let num=5;num>0;num--){
+                sum = sum * num;
+            }
+            console.log("5! = ",sum);
+        }
+        calculateFactorial();
+    </script>
+</body>
+</html>

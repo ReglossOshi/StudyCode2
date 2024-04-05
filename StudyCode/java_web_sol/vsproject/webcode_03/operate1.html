@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>단항 연산자 예제</h2>
+    
+    
+    <script>
+        // 변수 초기화
+        var x = 5;
+        var y = 10;
+    
+        // 증감 연산자를 사용한 예제
+        console.log('초기값 x:', x);  // 5
+    
+        // 후위 증가 연산자 (변수의 값을 읽고 나서 값 증가)
+        var postIncrementResult = x++;
+        console.log('후위 증가 결과:', postIncrementResult);  // 5
+        console.log('후위 증가 후 x:', x);  // 6
+    
+        // 전위 감소 연산자 (변수의 값을 감소시키고 나서 값 읽기)
+        var preDecrementResult = --y;
+        console.log('전위 감소 결과:', preDecrementResult);  // 9
+        console.log('전위 감소 후 y:', y);  // 9
+    </script>
+</body>
+</html>

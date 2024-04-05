@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>과일소개</h1>
+    <h2 id="subtitle">겨울과일소개</h2>
+    <p id="example">귤은 겨울에 건강에 좋은 과일입니다.</p>
+
+    <script>
+        // getElementById() 함수를 사용하여 태그의 내용을 가져옴
+        var sub = document.getElementById("subtitle").innerHTML;
+        var content = document.getElementById("example").innerHTML;
+
+        // 가져온 내용을 콘솔에 출력
+        console.log("가져온 내용:", sub);
+        console.log("가져온 내용:", content);
+    </script>
+</body>
+</html>

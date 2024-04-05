@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.BoardMapper">
+	<select id="getList" resultType="org.zerock.domain.BoardVO">
+		select /*+ INDEX_ASC(TBL_BOARD PK_BOARD)*/* from tbl_board
+
+		<trim prefix="where (" suffix=")"  prefixOverrides="OR">
+			<foreach item="type" collection="typeArr">
+				OR
+				<if test="type == 'T'.toString()">
+					title LIKE '%'||#{keyword}||'%'
+				</if>
+				<if test="type == 'W'.toString()">
+					writer LIKE '%'||#{keyword}||'%'
+				</if>
+				<if test="type == 'C'.toString()">
+					content LIKE '%'||#{keyword}||'%'
+				</if>
+			</foreach>
+		</trim>
+	</select>
+
+	<insert id="insert">
+		insert into tbl_board (
+		bno,
+		title, content, writer)
+		values (
+		seq_board.nextval,
+		#{title}, #{content}, #{writer})
+	</insert>
+
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="long">
+			select seq_board.nextval from dual
+<!--		mysql 방법2	select ifnull(max(bno),0)+1 from tbl_board-->
+		</selectKey>
+		insert into tbl_board (
+		bno,
+		title,content,writer)
+		values (
+		#{bno},
+		#{title}, #{content}, #{writer})
+	</insert>
+
+	<select id="read" resultType="org.zerock.domain.BoardVO">
+		select * from tbl_board where
+		<if test="bno != null">
+			bno = #{bno1}
+		</if>
+	</select>
+
+	<delete id="delete">
+		delete from tbl_board where bno = #{bno}
+	</delete>
+
+	<update id="update">
+		update tbl_board
+		set title=#{title},
+		content=#{content},
+		writer=#{writer},
+		updateDate=sysdate
+		where bno = #{bno}
+	</update>
+
+	<update id="views">
+		update tbl_board
+		set views =views+1
+		where bno = #{bno}
+	</update>
+
+	<select id="getDynamicMybatis" resultType="org.zerock.domain.BoardVO">
+		select * from tbl_board where 1=1
+		<trim prefixOverrides="OR" >
+			<foreach item="val" index="key"  collection="map">
+				<trim  prefix ="OR" >
+					<if test="key == 'C'.toString()">
+						content = #{val}
+					</if>
+					<if test="key == 'T'.toString()">
+						title = #{val}
+					</if>
+					<if test="key == 'W'.toString()">
+						writer = #{val}
+					</if>
+				</trim>
+			</foreach>
+		</trim>
+	</select>
+
+	<select id="getDynamicMybatis2" resultType="org.zerock.domain.BoardVO">
+		select * from tbl_board where 1=1
+			<foreach item="val" index="key"  collection="map">
+					OR
+					<if test="key == 'C'.toString()">
+						content = #{val}
+					</if>
+					<if test="key == 'T'.toString()">
+						title = #{val}
+					</if>
+					<if test="key == 'W'.toString()">
+						writer = #{val}
+					</if>
+			</foreach>
+	</select>
+</mapper>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/Servers/Tomcat v9.0 Server at localhost-config" element2="/Servers/Tomcat v9.0 Server at localhost-starbucks-config" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1707177385588"/>
+</session>

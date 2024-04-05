@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>do while 예제 - 랜덤숫자 발생</h2>
+
+    <script>
+        // do while 문을 사용하여 1에서 10까지 랜덤한 숫자 5개 출력
+        let count = 0;
+
+        do {
+            const randomNumber = Math.floor(Math.random() * 10) + 1;
+            console.log(randomNumber);
+            count++;
+        } while (count < 5);
+    </script>
+</body>
+</html>

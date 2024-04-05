@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>학생 목록</h2>
+
+    <table border="1" id="studentTable">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>성적</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김건우</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>박대용</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <input type="button" value="학생 추가" onclick="addStudentRow()">
+
+    <script>
+      function addStudentRow() {
+          // 테이블과 행 생성
+          var table = document.getElementById("studentTable");
+          var newRow = table.insertRow(); //appendChild()와 유사함수 <tr>생성
+
+          // 셀 생성 및 데이터 설정
+          var cell1 = newRow.insertCell(0); //appendChild() 열 추가 <td>생성
+          var cell2 = newRow.insertCell(1);
+          cell1.innerHTML = "새로운 학생";
+          cell2.innerHTML = "N/A";
+      }
+  </script>
+</body>
+</html>

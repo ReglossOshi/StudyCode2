@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 300px; height: 300px; border-radius: 50%; background-color: aqua; 
+            text-align: center; font-size: 30px; line-height: 300px;}
+    </style>
+</head>
+<body>
+    <h2>원을 그리고 마우스이벤트로 배경색 변경</h2>
+
+    <div>
+        원
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //hover 함수구문
+            //$(선택자).hover(function(){},function(){});
+            // hover 함수를 사용하여 마우스 오버 및 마우스 아웃 시에 이미지 변경
+            $("div").hover(
+                function() {
+                    // 마우스 오버 시 실행되는 코드
+                    $(this).css('background-color','yellow');
+                },
+                function() {
+                    // 마우스 아웃 시 실행되는 코드
+                    $(this).css('background-color','aqua');
+                }
+            );
+        });
+    </script>
+</body>
+</html>

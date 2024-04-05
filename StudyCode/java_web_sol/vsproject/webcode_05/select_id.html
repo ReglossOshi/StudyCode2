@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="targetText">현재 텍스트의 스타일 변경</h2>
+
+    <table border="1">
+        <tr>
+            <th class="name">이름</th>
+            <th class="depart">부서명</th>
+        </tr>
+        <tr>
+            <td class="name">윤호민</td>
+            <td class="depart">보안전산실</td>
+        </tr>
+        <tr>
+            <td class="name">심현준</td>
+            <td class="depart">기획조정실</td>
+        </tr>
+        <tr>
+            <td class="name">송지우</td>
+            <td class="depart">행정관리실</td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" value="이름:노랑 배경:검정" id="changeColorsTableButton">
+    <input type="button" value="스타일변경" id="changeColorsButton">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+         $('#changeColorsButton').click(function(){
+            $('#targetText').css({"color":"green","background-color":"rgb(153,217,234)"});
+         });           
+         $('#changeColorsTableButton').click(
+            function(){
+                $('.name').css({"color":"yellow","background-color":"black"});
+                $('.depart').css({"color":"blue","background-color":"green"});
+            }
+         );
+    </script>
+</body>
+</html>

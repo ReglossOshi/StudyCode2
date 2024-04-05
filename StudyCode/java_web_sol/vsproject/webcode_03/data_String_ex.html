@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트 문자형 자료</h2>
+    <script>
+        // 문자열 연결
+        var str1 = "Hello";
+        var str2 = "World";
+        var resultConcat = str1 + " " + str2;
+        console.log('문자열 연결 결과:', resultConcat);
+    
+        // 문자열 길이
+        var text = "JavaScript";
+        var text2 = "ja|va|sc|ri|pt";
+        var length = text.length;
+        console.log('문자열 길이:', length);
+    
+        // 문자열 추출
+        var substring = text.substring(4, 7);
+        console.log('부분 문자열:', substring);
+    
+        // 문자열 대체
+        var replacedText = text.replace("Script", "Code");
+        console.log('문자열 대체 결과:', replacedText);
+    
+        // 문자열 분할
+        var splitText = text.split("");
+        console.log('문자열 분할 결과:', splitText);
+
+        // 문자열 분할
+        var splitText2 = text2.split("|");
+        console.log('문자열 분할 결과:', splitText2);
+
+        var myString = "나는 등산이 취미입니다.";
+        //1.콘솔에 문자열 출력
+        console.log("원본: ",myString);
+        //2.문자열길이 출력
+        console.log("길이: ",myString.length);
+        //3.등산->자전거타기 로 바꿔서 출력
+        console.log("변경: ",myString.replace("등산이","자전거가"));
+        //4.등산이라는 글자만 뽑아서 출력
+        console.log("찾기: ",myString.substring(3, 5));
+    </script>
+
+</body>
+</html>

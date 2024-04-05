@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+	height: 1000px;
+	background-color: rgba(0,0,0,0.18);
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	margin-top:81px;
+	border: 1px solid red;
+	overflow: hidden;
+}
+
+.banner{
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	width:100%;
+	height:200px;
+	background-color:#F0EDCF;
+}
+
+.chart{
+	display:flex;
+	flex-direction:row;
+	margin-top:20px;
+	margin-left: 300px;	
+}
+
+.chart #circleChart{
+	margin-left: 40px;
+}

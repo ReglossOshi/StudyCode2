@@ -1,0 +1,9 @@
+        body{border: 1px solid black}
+        h2{border: 1px solid red; color:blue; background-color: yellow;}
+        #descript{border: 1px solid red; color:blue; background-color: pink;}
+        h3{border: 1px solid blue}
+        p{border: 1px solid salmon}
+        b{border: 1px solid saddlebrown}
+        .bold{font-weight: bold;}
+        ul>li{color:red}
+        #first li{color:aqua}

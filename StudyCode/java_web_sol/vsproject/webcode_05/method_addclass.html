@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{padding: 10px; cursor: pointer; background-color: skyblue;
+            transition: background-color 0.2s ease;
+        }
+        .yellow-background{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <h1>마우스를 오버하거나 앙웃하면 배경색이 변경</h1>
+
+    <h2>마우스를 올려보세요.</h2>
+    <h2>마우스를 올려보세요.</h2>
+    <h2>마우스를 올려보세요.</h2>
+    <h2>마우스를 올려보세요.</h2>
+    <h2>마우스를 올려보세요.</h2>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function() {
+            // h1 태그에 마우스 진입 이벤트 설정
+            $("h2").mouseenter(function() {
+                // 노란색 배경 클래스 추가
+                $(this).addClass("yellow-background");
+            });
+
+            // h1 태그에서 마우스 빠져나가는 이벤트 설정
+            $("h2").mouseleave(function() {
+                // 노란색 배경 클래스 제거
+                $(this).removeClass("yellow-background");
+            });
+        });
+    </script>
+</body>
+</html>

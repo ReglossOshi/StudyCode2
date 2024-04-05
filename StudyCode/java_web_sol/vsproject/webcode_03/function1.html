@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>두가지 종류 함수</h2>
+    <p id="output"></p>
+    <script>
+        function printMessage(){
+            // 페이지가 로드된 후에 실행되는 JavaScript 코드
+            document.getElementById("output").innerHTML = "Hello JavaScript";
+            return 1;
+        }
+
+        var result = printMessage();
+        console.log(result);
+    </script>
+</body>
+</html>

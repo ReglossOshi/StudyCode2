@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SejonghospitalBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+header{
+	position:fixed;
+	align-content:center;
+	top:0;
+	right:0;
+	left:0;
+	height:80px;
+	background-color: white;
+}
+
+.logo{
+	margin:10px 30px;
+	font-family: 'SejonghospitalBold';
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+.logo .logodiv{
+	display: flex;	
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+.logo .logodiv img{
+	margin-right: 20px;
+}
+
+
+.logo .logodiv .logoname{
+	display: inline;
+	font-size: 30px;
+	align-self: center;
+}
+
+
+header .login button{
+	width: 138px;
+	height: 40px;
+	border-radius: 5px;
+	font-family: 'SejonghospitalBold';
+	border: none;
+	box-shadow: none;
+	background-color: #40A2D8;
+	color: #F0EDCF;
+	cursor: pointer;
+}
+
+header .login button:hover{
+	background-color: #0B60B0;
+	color: #F0EDCF;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="filterForm">
+        <label for="gender">성별:</label>
+        <select id="gender" name="gender">
+          <option value="all">전체</option>
+          <option value="male">남성</option>
+          <option value="female">여성</option>
+        </select>
+    
+        <button type="button" onclick="filterResults()">필터 적용</button>
+      </form>
+    
+      <div id="results">
+        <p class="male">John - 남성</p>
+        <p class="female">Jane - 여성</p>
+        <p class="male">Alex - 남성</p>
+        <p class="female">Emma - 여성</p>
+      </div>
+
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <script>
+        function filterResults() {
+          var selectedGender = $('#gender').val();
+    
+          if (selectedGender === 'all') {
+            // 모든 결과를 표시
+            $('#results p').show();
+          } else {
+            // 선택된 성별에 따라 필터링
+            $('#results p').hide();
+            $('#results p.' + selectedGender).show();
+          }
+        }
+      </script>
+</body>
+</html>

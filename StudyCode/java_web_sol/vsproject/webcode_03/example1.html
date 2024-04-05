@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1부터 100까지중에서 짝수만 합계를 구해라</h2>
+
+    <script>
+        var a=1;
+        var sum=0;
+        while(a<=100){
+            if(a%2==0){
+                sum+=a;
+            }
+            a++;
+        }
+        console.log("합계 : ",sum);
+        var min=2;
+        var max=100;
+        console.log(((min+max)*(max/min))/2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>중첩 while문 예제(직각 삼각형)</h2>
+
+    <script>
+        // 직각 삼각형을 출력하는 프로그램
+        const rows = 5;  // 행의 크기
+
+        let i = 1;
+
+        while (i <= rows) {
+            let j = 1;
+            let rowOutput = '';
+
+            // 별(*) 추가
+            while (j <= i) {
+                rowOutput += '*';
+                j++;
+            }
+
+            console.log(rowOutput);
+            i++;
+        }
+    </script>
+</body>
+</html>

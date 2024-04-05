@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>버튼을 클릭하면 글자색과 배경색 모두 변경</h2>
+
+    <button id="changeColorsButton">색상 및 배경색 변경</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        // jQuery를 사용하여 문서가 준비되면 스크립트 실행
+        $(document).ready(function() {
+            // 버튼 클릭 시 글자색과 배경색 변경
+            $("#changeColorsButton").click(function() {
+                // 랜덤한 색상 생성
+                var randomTextColor = getRandomColor();
+                var randomBgColor = getRandomColor();
+
+                // 선택한 요소의 스타일 변경
+                $(this).css({
+                    "color": randomTextColor,
+                    "background-color": randomBgColor
+                });
+            });
+
+            // 랜덤한 색상을 반환하는 함수
+            function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        });
+    </script>
+</body>
+</html>

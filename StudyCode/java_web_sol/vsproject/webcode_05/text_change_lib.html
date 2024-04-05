@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>화면에 텍스트를 처리하는 함수들</h2>
+
+    <div id="htmlText">
+        <h2>제이쿼리 텍스트처리 예제</h2>
+    </div>
+
+    <p id="generalText">일반 텍스트처리 예제</p>
+
+    <input type="text" value="폼 텍스트 예제" name="" id="formText">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        //글자와 태그를 모두 가져온 예제
+         $(document).ready(function(){
+            var htmlText = $('#htmlText').html();
+            console.log("html태그값: ",htmlText);
+        //글자만 모두 가져온 예제
+        var generalText = $('#generalText').text();
+        console.log("text값: ",generalText);
+
+        //폼의 글자를 가져온 예제
+        var formText = $('#formText').val();
+        console.log("form값: ",formText);
+        });
+    </script>
+</body>
+</html>

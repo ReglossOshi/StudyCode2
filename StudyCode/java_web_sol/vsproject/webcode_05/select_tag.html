@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>타이틀제목</h1>
+    <h2>부제목</h2>
+    <p>안녕하세요 제이쿼리 연습입니다.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVAScript</li>
+    </ul>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $('h1, h2').css('color','green');
+                $('p').css({'color': 'blue', 'background-color': 'gray'})
+                $('li').css({'color':"orange", "background-color":"violet"});
+                
+            }
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>배열값을 리스트태그안에 반복출력</h2>
+
+    <ul id="arrayList">
+        <!-- 배열 값을 넣어서 출력 -->
+    </ul>
+
+    <!-- jq lib 임포트 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 예제 배열
+            var sampleArray = ["Apple", "Banana", "Orange", "Grapes", "Cherry"];
+
+            // 배열의 각 요소를 처리하고 리스트에 추가
+            $.each(sampleArray, function(index, value) {
+                // 각 요소를 출력
+                console.log("Index: " + index + ", Value: " + value);
+
+                // 리스트에 요소를 추가
+                $("#arrayList").append("<li>" + value + "</li>");
+            });
+        });
+    </script>
+</body>
+</html>

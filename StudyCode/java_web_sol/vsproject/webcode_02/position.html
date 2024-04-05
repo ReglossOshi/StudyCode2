@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outbox{width: 600px; height: 600px; background-color: #cccccc;
+            position: relative;
+        }
+        .inbox{width: 200px; height: 200px; background-color: yellow;
+            font-size: 32px; text-align: center; line-height: 200px;
+        }
+        #one{position: relative; left: 400px; top: 400px;}
+        #two{position: absolute; top: 200px; left: 200px; background-color: orange;}
+        #three{position: fixed; right: 0; bottom: 0; width: 50px; height: 50px; line-height: 50px;}
+    </style>
+</head>
+<body>
+    <h2>보드판 화면</h2>
+    <div class="outbox">
+        <div class="inbox" id="one">1번</div>
+        <div class="inbox" id="two">2번</div>
+        <div class="inbox" id="three">3번</div>
+
+    </div>
+</body>
+</html>

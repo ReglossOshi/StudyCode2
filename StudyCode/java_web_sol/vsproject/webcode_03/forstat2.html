@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>중첩 for문을 사용해서 사각형 만들기</h2>
+
+    <script>
+        // 직사각형을 출력하는 프로그램
+        const rows = 5;    // 행의 크기
+        const cols = 5;    // 열의 크기
+        for (let i = 1; i <= rows; i++) {
+            let rowOutput = '';
+            // 별(*) 추가
+            for (let j = 1; j <= cols; j++) {
+                rowOutput += '*';
+            }
+            console.log(rowOutput);
+        }
+    </script>
+</body>
+</html>

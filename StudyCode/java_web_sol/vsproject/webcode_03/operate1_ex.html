@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>단항 연산자 예제</h2>
+    <p>예측 result = 17</p>
+    <p>예측 result2 = 18</p>
+    <script>
+        var x=9;
+        var y=7;
+        var result = x++ + ++y;
+        //x=10 y=8 result=9+8=17;
+        var result2 = x++ + y++;
+        //x=11 y=9 result2=10+8=18;
+        console.log(result);
+        console.log(result2);
+    </script>
+</body>
+</html>

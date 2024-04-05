@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width: 1024px;}
+        th{border: 1px solid black; border-left: none; border-right: none; border-bottom-width: 2px; background-color: #cccccc;}
+        
+        .header{background-color: rgb(0, 55, 128); text-align: center; color: white;
+                padding: 10px;
+            }
+        .nev{background-color: rgb(92, 124, 8); text-align: center; padding: 1px;}
+        .nev li{display: inline-block; width: 100px; color: white;}
+
+        .name{color: blue;}
+
+        .contents{padding: 0px 0px 100px 0px; margin: 30px 0px 30px 40px;}
+        .footer{background-color: rgb(92, 124, 8); text-align: center; padding: 1px; color: brown;}
+        img{float: right; width: 200px; position: relative; bottom: 50px;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>웹페이지 디자인 연구소</h1>
+            <p>school of web</p>
+        </div>
+        <div class="nev">
+            <ul>
+                <li>HOME</li>
+                <li>PEOPLE</li>
+                <li>CLASS</li>
+                <li><a style="color:brown">NOTICE</a></li>
+                <li>PICTURE</li>
+            </ul>
+        </div>
+        <div class="contents">
+            <h2>공지사항 & 뉴스</h2><img src="dell.png">
+            
+            <p>2020.05.05 by 관리자</p>
+            <h3>샘플게시판</h3>
+            
+            <table>
+                <tr>
+                    <th width="50px">번호</th>
+                    <th width="400px">제목</th>
+                    <th width="100px">작성자</th>
+                    <th width="100px">날짜</th>
+                    <th width="100px">조회수</th>
+                    <th width="100px">댓글수</th>
+                </tr>
+                <tr >
+                    <td>165</td>
+                    <td class="name">새 스티커 상품 출시</td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr >
+                    <td>166</td>
+                    <td class="name">입문자 위한 안내</td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr >
+                    <td>167</td>
+                    <td class="name">웹사이트 개발 도구 소개</td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr >
+                    <td>168</td>
+                    <td class="name">안녕하세요.</td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr >
+                    <td>169</td>
+                    <td class="name">게시판을 오픈했습니다.</td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p><a style="color: white;">Copywriter &copy;2020 </a>Copywriter.H20.com</p>
+        </div>
+    </div>
+</body>
+</html>

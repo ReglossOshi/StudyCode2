@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>비행기 이미지 변경</h2>
+
+    <p>다음버튼을 누르면 1->2->3->1 </p>
+
+    <img src="plane1.jpg" alt="비행기" id="plane">
+    <br>
+    <input type="button" value="다음이미지" onclick="nextImage()">
+
+    <script>
+        var number = 1;
+        var image = document.getElementById("plane");
+        function nextImage(){
+            if(number>3){
+                number=1;
+            }
+        switch(number){
+            case 1:
+                image.src = "plane1.jpg";
+                break;
+            case 2:
+                image.src = "plane2.jpg";
+                break;
+            case 3:
+                image.src = "plane3.jpg";
+                break;
+        }
+        number++;
+    }
+    </script>
+</body>
+</html>

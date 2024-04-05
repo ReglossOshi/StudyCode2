@@ -1,0 +1,19 @@
+INDEX VERSION 1.134
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\773733602.index
+\starbucks-springboot\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2311794584.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1140349183.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\755943323.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1206470954.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1113775644.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2544987931.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2694948808.index
+\ex02\src\main\java
+C:\Users\human-01\Desktop\StudyCode\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1237953066.index
+\ex02\src\main\java

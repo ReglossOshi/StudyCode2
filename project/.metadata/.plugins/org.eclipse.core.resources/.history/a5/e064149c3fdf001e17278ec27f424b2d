@@ -1,0 +1,5 @@
+package com.projectnike.nike.config;
+
+public class DBConfig {
+
+}

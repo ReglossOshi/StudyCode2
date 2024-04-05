@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>점수와 합계</h2>
+    <div>
+        <label for="score1">점수 1:</label>
+        <input type="number" id="score1" value="90">
+    </div>
+
+    <div>
+        <label for="score2">점수 2:</label>
+        <input type="number" id="score2" value="85">
+    </div>
+
+    <div>
+        <label for="score3">점수 3:</label>
+        <input type="number" id="score3" value="78">
+    </div>
+
+    <button onclick="calculateSum()">합계 계산</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateSum() {
+            // 각각의 입력된 점수를 가져오기
+            var score1 = parseInt(document.getElementById("score1").value);
+            var score2 = parseInt(document.getElementById("score2").value);
+            var score3 = parseInt(document.getElementById("score3").value);
+
+            // 점수의 합계 계산
+            var sum = score1 + score2 + score3;
+
+            // 결과를 화면에 출력
+            document.getElementById("result").innerHTML = "점수 합계: " + sum;
+        }
+    </script>
+</body>
+</html>

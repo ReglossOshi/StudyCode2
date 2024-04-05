@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>간단하게 p 태그를 추가 예제</h2>
+
+    <input type="button" value="새로운 단락추가" onclick="addParagraph()">
+
+    <script>
+        function addParagraph() {
+          // 새로운 p 태그 생성
+          var newParagraph = document.createElement('p');
+    
+          // 텍스트 노드 생성 및 추가
+          var textNode = document.createTextNode('이것은 새로운 단락입니다.');
+          newParagraph.appendChild(textNode);
+    
+          // body에 새로운 p 태그 추가
+          document.body.appendChild(newParagraph);
+        }
+      </script>
+</body>
+</html>

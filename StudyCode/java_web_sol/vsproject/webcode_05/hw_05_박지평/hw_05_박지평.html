@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #slideContainer{overflow: hidden; width: 400px; position: relative;} */
+        #slideContainer{border: 1px solid green; position: relative; width: 400px;}
+        #slideList{width: 400px;}
+        /* .slideItem{width: 400px; float: left;} */
+        .slideItem{display: none;}
+        .active{display: block;}
+        /* 버튼 디자인 */
+        .slideButton{position: absolute; top: 50%; color: white; font-size: 20px; 
+            background-color: black;
+            padding: 10px; border: none; margin-top: -20px;
+        }
+        #prevButton{left: 0;}
+        #nextButton{right: 0;}
+
+    </style>
+</head>
+<body>
+    <h2>이미지 바꾸는 예제</h2>
+    <div id="slideContainer">
+        <div id="slideList">
+            <div class="slideItem active"><img src="1.jpg"></div>
+            <div class="slideItem"><img src="2.jpg" alt=""></div>
+            <div class="slideItem"><img src="3.jpg" alt=""></div>
+        </div>
+
+        <button id="prevButton" class="slideButton">&#10094</button>
+        <button id="nextButton" class="slideButton">&#10095</button>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        var num =1;
+
+        $(function(){
+            $('#prevButton').click(function(){
+                $('.active').removeClass("active");      
+                --num;
+                if(num<=0){
+                    num=3;
+                }
+
+                $('.slideItem').each(function(index, value){
+                    if(index==(num-1)){
+                        $(this).addClass("active");
+                    }
+                });
+            });
+
+            $('#nextButton').click(function(){
+                $('.active').removeClass("active");
+                ++num;
+                if(num>3){
+                    num=1;
+                }
+                $('.slideItem').each(function(index, value){
+                    if(index==(num-1)){
+                        $(this).addClass("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>점수가 3개 있을 때 합계와 평균</h2>
+
+    <script>
+        //배열
+        var score=new Array(90, 70, 85);
+
+        //합계 출력
+        var sum=0;
+        for(let i=0;i<score.length;i++){
+            sum+=score[i];
+        }
+        console.log("합계: ",sum);
+
+        //평균 출력
+        console.log("평균: ",Math.floor(sum/score.length));
+    </script>
+    <script>
+        //배열
+        var score=new Array(90, 70, 85);
+
+        //합계 출력
+        function summit(arr){
+            var sum=0;
+            for(let i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            return sum;
+        }
+
+        //합계
+        console.log("합계: ",summit(score));
+        var avg = summit(score);
+        
+        //평균 출력
+        function average(arr){
+            return Math.floor(summit(arr)/arr.length);
+        }
+
+        console.log("평균: ",average(score));
+    </script>
+</body>
+</html>

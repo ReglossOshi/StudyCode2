@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>도서관 검색페이지</title>
+        <style>
+            
+            .manu{border-style: hidden;}
+            #text1{overflow: scroll scroll;}
+            #sel{overflow: scroll;}
+            #size{border-color: white; border-width: 1px 30px 1px 1px;}
+    </style>
+    </head>
+<body>
+    <h2>도서관 검색페이지</h2>
+    <table border="1">
+        <tr>
+            <th>도서명</th>
+            <td colspan="3"><input type="text" name="도서명" id="" size="65" ></td>
+        </tr>
+        <tr>
+            <th>출판사명</th>
+            <td colspan="3"><input type="text" name="도서명" id="" size="65" ></td>
+        </tr>
+        <tr>
+            <th>발행연도</th>
+            <td id="size">
+                <select name="년도" id="">
+                    <option value="">2005년</option>
+                </select>
+            </td>
+            <td >저자암호</td>
+            <td><input type="password" name="" id="" size="40"></td>
+        </tr>
+        <tr>
+            <th>도서이미지</th>
+            <td colspan="3">
+                <input type="text" name="" id="" size="55">
+                <input type="submit" name="찾아보기" id="" value="찾아보기">
+            </td>
+            
+        </tr>
+        <tr>
+            <th>관련검색단어</th>
+            <td colspan="3"> 
+                <input type="checkbox" name="단어">웹표준
+                <input type="checkbox" name="단어">에이작스
+                <input type="checkbox" name="단어">자바스크립트
+                <input type="checkbox" name="단어">HTML
+                <input type="checkbox" name="단어">MYSQL
+            </td>
+        </tr>
+        <tr>
+            <th>보관 도서관</th>
+            <td colspan="3">
+                <input type="radio" name="도서관">도서관1
+                <input type="radio" name="도서관">도서관2
+                <input type="radio" name="도서관">도서관3
+                <input type="radio" name="도서관">도서관4
+                <input type="radio" name="도서관">도서관5
+            </td>
+        </tr>
+        <tr>
+            <th>관련 제목</th>
+            <td colspan="3">
+                    <select name="" id="sel" size="4">
+                            <option value="">component_1</option>
+                            <option value="">component_2</option>
+                            <option value="">component_3</option>
+                            <option value="">component_4</option>
+                    </select>
+                
+                
+            </td>
+        </tr>
+        <tr>
+            <th>설명</th>
+            <td colspan="3">
+                <textarea name="" id="text1" cols="65" rows="10">
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right" class="manu">
+                <input type="submit" name="검색하기" id="" value="검색하기">
+                <input type="submit" name="검색하기" id="" value="취소하기">
+                <input type="submit" name="검색하기" id="" value="목록보기">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

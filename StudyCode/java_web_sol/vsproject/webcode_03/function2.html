@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>사칙연산</h2>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                return "나누기는 0으로 나눌 수 없습니다.";
+            }
+            return a / b;
+        }
+
+        window.onload = function() {
+            // 예제 사용
+            var resultAdd = add(5, 3);
+            var resultSubtract = subtract(7, 2);
+            var resultMultiply = multiply(4, 6);
+            var resultDivide = divide(8, 2);
+
+            // 결과 출력
+            console.log("덧셈:", resultAdd);
+            console.log("뺄셈:", resultSubtract);
+            console.log("곱셈:", resultMultiply);
+            console.log("나눗셈:", resultDivide);
+        };
+    </script>
+</body>
+</html>

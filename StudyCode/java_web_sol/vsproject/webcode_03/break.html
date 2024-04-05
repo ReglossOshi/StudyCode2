@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>while문과 break문을 사용해서 합계를 구하기</h2>
+
+    <script>
+        // while 문과 break 문을 사용하여 1부터 10까지의 합 구하기
+        let sum = 0;
+        let number = 1;
+
+        while (true) {
+            sum += number;
+
+            if (number === 10) {
+                break; // number가 10이면 반복문 종료
+            }
+
+            number++;
+        }
+
+        console.log("1부터 10까지의 합:", sum);
+    </script>
+</body>
+</html>

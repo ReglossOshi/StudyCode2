@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{border: 1px solid black;
+        width:300px; height: 300px;
+        background-color: yellow;}
+        h1{text-align: center;
+            width:100%; height: 100%; line-height: 300px;
+            margin: 0;}
+    </style>
+</head>
+<body>
+    <h2>네모 박스 마우스가 올라가면 파란색으로 변경(초기색 : 노란색)</h2>
+
+    <div id="box" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <h1 id="txt">네모상자</h1>
+    </div>
+
+    <script>
+        var examDiv = document.getElementById("box");
+        var examDiv = document.getElementById("txt");
+
+        function mouseOver(){
+            // alert("마우스가 올라감");   
+            examDiv.style.background = "blue";
+            txt.innerHTML = "마우스 온";
+        }
+        function mouseOut(){
+            examDiv.style.background = "yellow";
+            txt.innerHTML = "마우스 아웃";
+        }
+        
+    </script>
+</body>
+</html>

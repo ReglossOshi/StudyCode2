@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>논리 자료형 예제</h2>
+    <script>
+        // 불리언 변수 정의
+        var isUserLoggedIn = false;
+    
+        // 조건문 사용
+        if (isUserLoggedIn) {
+            console.log('사용자가 로그인되어 있습니다.');
+        } else {
+            console.log('사용자가 로그인되어 있지 않습니다.');
+        }
+    
+        // 다양한 조건문 활용
+        var userRole = 'admin';
+    
+        if (userRole === 'admin') {
+            console.log('관리자 권한이 있습니다.');
+        } else if (userRole === 'user') {
+            console.log('일반 사용자입니다.');
+        } else {
+            console.log('관리자나 사용자가 아닙니다.');
+        }
+    
+        // 논리 연산자를 사용한 조건문
+        var hasPermission = true;
+        var isVerifiedUser = true;
+    
+        if (hasPermission && isVerifiedUser) {
+            console.log('권한이 있고 사용자가 인증되었습니다.');
+        } else {
+            console.log('권한이 없거나 사용자가 인증되지 않았습니다.');
+        }
+    </script>
+</body>
+</html>

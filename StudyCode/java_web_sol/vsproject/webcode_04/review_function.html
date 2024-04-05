@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>함수 복습 예제</h2>
+    <P id="example">결과 출력: </P>
+    <P id="example2">결과 출력: </P>
+    <script>
+        var sum=0;
+        var n=20;
+        for(let i=1;i<=n;i++){
+            sum+=i;
+        }
+
+        function sumToNum(num){
+            let rst=0;
+            for(let i=1;i<=num;i++){
+                rst += i;
+            }
+            return rst;
+        }
+
+        document.getElementById("example").innerHTML = "결과 출력: "+sum;
+        document.getElementById("example2").innerHTML = "결과 출력: "+sumToNum(n);
+    </script>
+</body>
+</html>

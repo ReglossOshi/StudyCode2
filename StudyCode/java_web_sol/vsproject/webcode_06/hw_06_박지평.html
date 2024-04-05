@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul,li{border: 1px solid red;} */
+        /* div, .manu>li{border: 1px solid red;} */
+        /* div{background-color: gray; width: 600px; padding: 5px;} */
+        body{margin: 0;}
+        ul{margin: 0; padding: 0; background-color: gray; width: 800px;}
+        .manu>li{display: inline-block; 
+            width: 100px; 
+            text-align: center; 
+            padding: 10px; 
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <ul class="manu">
+            <li id="first">Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    
+        <script src="js/jquery-3.7.1.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("li").hover(
+                    function() {
+                        $(this).css({"background-color":"white","color":"black"});
+                    },
+                    function() {
+                        $(this).css({"background-color":"gray","color":"white"});
+                    }
+                );
+            });
+        </script>
+</body>
+</html>

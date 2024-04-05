@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageContainer{border: 2px solid black; width: 400px;}
+    </style>
+</head>
+<body>
+    <div class="imageContainer">
+        <img src="2.jpg" alt="자동차">
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.imageContainer').mouseenter(function(){
+                $(this).css('border-color','red');
+            });
+            $('.imageContainer').mouseleave(function(){
+                $(this).css('border-color','black');
+            });
+        });
+    </script>
+</body>
+</html>

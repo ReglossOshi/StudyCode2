@@ -1,0 +1,13 @@
+127.0.0.1 - - [07/Mar/2024:15:16:22 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:23 +0900] "GET /Human2TeamProjectClothes/ HTTP/1.1" 200 1994
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:31 +0900] "POST /Human2TeamProjectClothes/login_form.jsp HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:32 +0900] "GET /Human2TeamProjectClothes/main.jsp HTTP/1.1" 200 7808
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:34 +0900] "GET /Human2TeamProjectClothes/main.jsp?year=2023 HTTP/1.1" 200 7769
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:36 +0900] "GET /Human2TeamProjectClothes/main.jsp?year=2024 HTTP/1.1" 200 7808
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:39 +0900] "GET /Human2TeamProjectClothes/store.jsp HTTP/1.1" 200 15709
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:49 +0900] "GET /Human2TeamProjectClothes/product_list.jsp HTTP/1.1" 200 12587
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:49 +0900] "GET /Human2TeamProjectClothes/css/product_list.css HTTP/1.1" 200 3140
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:53 +0900] "GET /Human2TeamProjectClothes/product_list.jsp?page=2&search= HTTP/1.1" 200 9788
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:16:55 +0900] "GET /Human2TeamProjectClothes/product_list.jsp?page=1&search= HTTP/1.1" 200 12587
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:17:03 +0900] "GET /Human2TeamProjectClothes/product_add_form.jsp HTTP/1.1" 200 7874
+0:0:0:0:0:0:0:1 - - [07/Mar/2024:15:17:03 +0900] "GET /Human2TeamProjectClothes/css/product_add.css HTTP/1.1" 200 3459

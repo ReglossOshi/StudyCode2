@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>전구 키고 끄기</h2>
+    <img src="light1.jpg" alt="전구" id="imageElement">
+    <br>
+    <input type="button" value="이미지변경" id="changeImageButton" onclick="changeImage()">
+
+    <script>
+        // 조건 변수
+        var condition = true; // true 또는 false에 따라 다른 이미지 출력
+    
+        // 이미지 요소 찾기
+        var imageElement = document.getElementById('imageElement');
+    
+        // 조건에 따라 이미지 설정
+        function changeImage(){
+            condition = !condition;
+        if (condition) {
+            imageElement.src = 'light2.jpg'; // 조건이 true일 때의 이미지 경로
+        } else {
+            imageElement.src = 'light1.jpg'; // 조건이 false일 때의 이미지 경로
+        }
+    }
+    </script>
+</body>
+</html>

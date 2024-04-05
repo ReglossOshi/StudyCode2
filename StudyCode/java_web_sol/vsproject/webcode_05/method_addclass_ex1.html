@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trbackground{background-color: violet;
+            transition: background-color 0.3s ease;
+        }
+        .td_background{background-color: violet;}
+    </style>
+</head>
+<body>
+    <h2>테이블 행에 마우스가 올라가면 보래색으로 변경</h2>
+
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>이메일</th>
+            <th>전화번호</th>
+        </tr>
+        <tr>
+            <td>박대용</td>
+            <td>tkpark@naver.com</td>
+            <td>010-1111-3030</td>
+        </tr>
+        <tr>
+            <td>박대용</td>
+            <td>tkpark@naver.com</td>
+            <td>010-1111-3030</td>
+        </tr>
+        <tr>
+            <td>박대용</td>
+            <td>tkpark@naver.com</td>
+            <td>010-1111-3030</td>
+        </tr>
+        <tr>
+            <td>박대용</td>
+            <td>tkpark@naver.com</td>
+            <td>010-1111-3030</td>
+        </tr>
+    </table>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("td").mouseenter(function(){
+                $(this).addClass("td_background");
+            });
+        $("td").mouseout(function(){
+                $(this).removeClass("td_background");
+            });
+        });
+    </script>
+</body>
+</html>

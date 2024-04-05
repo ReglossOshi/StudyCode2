@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>숫자 이미지를 출력</h2>
+    <img src="num4.jpg" alt="질문" id="number">
+
+    <script>
+        var score=90;
+        var image = document.getElementById("number");
+
+        if(score>=90){
+            image.src="num1.jpg";
+        } else if(score>=80){
+            image.src="num2.jpg";
+        } else if(score>=70){
+            image.src="num3.jpg";
+        } else{
+            image;
+        }
+    </script>
+</body>
+</html>

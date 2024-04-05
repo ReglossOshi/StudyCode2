@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width: 960px; margin: 0 auto;}
+
+        .header{text-align: center; margin: 10px;}
+        .nav{background-color: #999999; padding: 10px;}
+        .nav>ul{list-style-type: none;}
+        .nav>ul>li{display: inline-block; width: 50px; padding: 5px;}
+
+        .content{text-align: center;width: 100%; font-size: 24px; font-weight: bold; overflow: auto;}
+        .content>.feature{background-color: #999999; margin: 10px; padding: 10px;}
+        .content>.article{background-color: #999999; width: 300px; float: left; 
+            margin: 10px; 
+        }
+
+        .footer{background-color: #999999; text-align: center; clear: both; 
+            margin: 10px; padding: 10px;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="image/logo.png"></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">연락처</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="feature">
+            <p>제품의 특징</p>
+        </div>
+        <div class="article">
+            <p>제품 1번째 열</p>
+        </div>
+        <div class="article">
+            <p>제품 2번째 열</p>
+        </div>
+        <div class="article">
+            <p>제품 3번째 열</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copywriter 2022</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outputText{border: 1px solid green;}
+    </style>
+</head>
+<body>
+    <h2>jQuery 라이브러리 연동 예제</h2>
+
+    <input type="button" value="글자출력" id="outputButton">
+
+    <h3 id="outputText"></h3>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        var s = [
+            "안녕하세요, jQuery를 이용한 출력 예제입니다!",
+            "안녕하세요, jsp를 이용한 출력 예제입니다!",
+            "안녕하세요, java를 이용한 출력 예제입니다!"
+        ];
+        // jQuery를 사용하여 문서가 준비되면 스크립트 실행
+        $(document).ready(function() {
+            // 버튼 클릭 시 글자 출력
+            $("#outputButton").click(function() {
+                temp=generateRandomNum();
+                $("#outputText").text(s[temp]);
+            });
+        });
+
+        function generateRandomNum(){
+            result=Math.floor(Math.random()*3);
+            return result;
+        }
+    </script>
+</body>
+</html>

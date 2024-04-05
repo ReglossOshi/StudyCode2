@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>회원가입-validation체크</h2>
+
+    <form action="">
+        <p id="text"></p>
+        <p><input type="text" name="" id="username" placeholder="아이디"></p>
+        <p><input type="password" name="" id="password" placeholder="비밀번호"></p>
+        <p><input type="password" name="" id="confirmPassword" placeholder="비밀번호 확인"></p>
+        <p><input type="email" name="" id="email" placeholder="이메일"></p>
+        <p><input type="button" value="회원가입" onclick="validateForm()"></p>
+    </form>
+
+    <script>
+        
+        function validateForm(){
+            var user = document.getElementById("username").value;
+            var pw = document.getElementById("password").value;
+            var cfpw = document.getElementById("confirmPassword").value;
+            var email = document.getElementById("email").value;
+            
+            if(user.length==0){
+                document.getElementById("text").innerHTML="입력된 아이디가 잘못됬습니다.";
+            } else if(pw.length==0){
+                document.getElementById("text").innerHTML="입력된 비밀번호가 잘못됬습니다.";
+            } else if(email.length==0){
+                document.getElementById("text").innerHTML="입력된 이메일이 잘못됬습니다.";
+            } else if(pw!=cfpw){
+                document.getElementById("text").innerHTML="입력된 비밀번호가 다릅니다.";
+            } else{
+                document.getElementById("text").innerHTML="회원가입 완료";
+            }
+        }
+    </script>
+</body>
+</html>

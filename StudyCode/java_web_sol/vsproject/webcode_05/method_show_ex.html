@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>jp show(), hide() 함수로 구현</h2>
+    <input type="button" value="이미지 보이기" id="showButton">
+    <input type="button" value="이미지 숨기기" id="hideButton">
+
+    <p>
+        <img src="car.png" id="sampleImage">
+    </p>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#showButton').click(function(){
+                $("#sampleImage").show();
+            });
+            $('#hideButton').click(function(){
+                $("#sampleImage").hide();
+            });
+        });
+    </script>
+</body>
+</html>

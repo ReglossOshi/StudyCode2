@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>버튼을 클릭하면 배경색이 변경되는 이벤트</h2>
+    <input type="button" value="색상 변경" onclick="changeBackgroundColor()">
+    <script>
+        function changeBackgroundColor() {
+            // 랜덤한 RGB 색상 생성
+            var randomColor = getRandomColor();
+
+            // body의 배경색 변경
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
